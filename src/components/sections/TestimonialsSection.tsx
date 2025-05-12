@@ -64,7 +64,9 @@ export default function TestimonialsSection() {
               ))}
             </div>
 
-            <p className="italic mb-4 text-light/90 leading-relaxed">"{testimonial.text}"</p>
+            <p className="italic mb-4 text-light/90 leading-relaxed">
+              &quot;{testimonial.text}&quot;
+            </p>
 
             <div className="flex items-center gap-4 mt-6">
               <div className="w-12 h-12 rounded-full bg-primary" />
