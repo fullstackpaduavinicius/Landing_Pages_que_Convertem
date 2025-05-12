@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #FF6B35, #f97316);
+  }
+  
+  .card-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .card-3d:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 25px 50px -12px rgba(255, 107, 53, 0.25);
+  }
+}
