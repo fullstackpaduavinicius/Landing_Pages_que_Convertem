@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import PortfolioCard, { PortfolioItem } from '../ui/PortfolioCard';
+import { FiExternalLink } from 'react-icons/fi';
 
 const portfolioItems: PortfolioItem[] = [
   {
@@ -29,7 +30,6 @@ const portfolioItems: PortfolioItem[] = [
     link: "https://devsolutions-lvpryiwc2-padua-vinicius-projects.vercel.app/",
     techs: []
   },
-  
 ];
 
 export default function PortfolioSection() {
@@ -38,7 +38,7 @@ export default function PortfolioSection() {
   const y = useTransform(scrollYProgress, [0, 1], ["-30%", "10%"]);
 
   return (
-    <section ref={ref} className="py-24 bg-light text-dark relative overflow-hidden">
+    <section ref={ref} className="py-24 bg-gray-50 text-dark relative">
       {/* Título animado */}
       <motion.h2 
         style={{ y }}
@@ -48,14 +48,38 @@ export default function PortfolioSection() {
       </motion.h2>
 
       {/* Grid de cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-12 max-w-7xl mx-auto">
         {portfolioItems.map((item) => (
           <motion.div
             key={item.id}
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            whileHover={{ y: -5 }}
+            transition={{ type: "spring", stiffness: 400 }}
+            className="relative"
           >
-            <PortfolioCard item={item} />
+            <div className="h-full bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 flex flex-col">
+              <div className="overflow-hidden h-60">
+                <img 
+                  src={item.imageUrl} 
+                  alt={item.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              
+              <div className="p-6 flex-grow">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 mb-6">{item.result}</p>
+                
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg font-semibold transition-colors w-full"
+                >
+                  Ver Projeto
+                  <FiExternalLink />
+                </a>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>
@@ -69,7 +93,7 @@ export default function PortfolioSection() {
         className="mt-16 px-6 py-5 bg-white border border-gray-200 rounded-xl shadow-sm max-w-2xl mx-auto text-center text-sm text-gray-600"
       >
         <p>
-          <strong className="text-gray-800">Nota:</strong> Todos os projetos exibidos são versões demonstrativas. Imagens, textos e dados reais foram substituídos por conteúdo genérico para garantir a privacidade dos meus clientes — o foco aqui é mostrar meu processo, qualidade e resultados entregues.
+          <strong className="text-gray-800">Nota:</strong> TTodos os projetos exibidos são versões demonstrativas. Imagens, textos e dados reais foram substituídos por conteúdo genérico para garantir a privacidade dos meus clientes — o foco aqui é mostrar meu processo, qualidade e resultados entregues.
         </p>
       </motion.div>
     </section>
