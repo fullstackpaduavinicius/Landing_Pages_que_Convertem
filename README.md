@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Landing Page de Vendas
 
-## Getting Started
+Uma landing page moderna e responsiva construída com **Next.js**, **React 19** e **Tailwind CSS**, com foco em performance, conversão e integração com formulários. Ideal para negócios que desejam gerar resultados reais com presença digital.
 
-First, run the development server:
+## ✨ Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ✅ Layout responsivo e moderno
+- ✅ Vídeo integrado com destaque para especialistas
+- ✅ Scroll suave para chamadas de ação
+- ✅ Formulário com validação (React Hook Form + Zod)
+- ✅ Análises integradas com Vercel Analytics
+- ✅ Animada com Framer Motion
+- ✅ Estilizada com Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js 15](https://nextjs.org/)
+- [React 19](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Vercel Analytics](https://vercel.com/analytics)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Instalação e Uso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone o repositório:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ 
+   git clone https://github.com/fullstackpaduavinicius/lp-vinicius-dev.git
+   cd landing-page-vendas
+2. Instale as dependências:]
+   npm install
+3. Rode o projeto localmente:
+   npm run dev 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Comando         | Descrição                                  |
+| --------------- | ------------------------------------------ |
+| `npm run dev`   | Inicia o projeto em modo dev com Turbopack |
+| `npm run build` | Gera a build de produção                   |
+| `npm start`     | Inicia a aplicação em modo produção        |
+| `npm run lint`  | Executa o ESLint                           |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
