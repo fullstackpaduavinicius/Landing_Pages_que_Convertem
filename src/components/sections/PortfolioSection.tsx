@@ -2,9 +2,17 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import PortfolioCard, { PortfolioItem } from '../ui/PortfolioCard';
 import { FiExternalLink } from 'react-icons/fi';
-import Image from 'next/image'; // Importando o componente Image do Next.js
+import Image from 'next/image';
+
+type PortfolioItem = {
+  id: number;
+  title: string;
+  imageUrl: string;
+  result: string;
+  link: string;
+  techs: string[];
+};
 
 const portfolioItems: PortfolioItem[] = [
   {
@@ -59,12 +67,11 @@ export default function PortfolioSection() {
           >
             <div className="h-full bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 flex flex-col">
               <div className="overflow-hidden h-60">
-                {/* Substituindo <img> por <Image> do Next.js */}
                 <Image 
                   src={item.imageUrl} 
                   alt={item.title} 
-                  width={500} // Definindo as dimensões da imagem
-                  height={300} // Definindo as dimensões da imagem
+                  width={500}
+                  height={300}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
