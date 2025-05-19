@@ -47,6 +47,14 @@ const portfolioItems: PortfolioItem[] = [
     link: "www.ejarabaonline.com/",
     techs: []
   },
+  {
+    id: 4,
+    title: "Delivery",
+    imageUrl: "/imagens/ejaraba.jpeg",
+    result: "Delivery simplificado. Cardapio oline + cadastro de pedido + redirecionamento para whatsapp.",
+    link: "delivery-app-ebon.vercel.app",
+    techs: []
+  },
 ];
 
 export default function PortfolioSection() {
