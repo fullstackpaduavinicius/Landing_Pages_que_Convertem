@@ -39,6 +39,14 @@ const portfolioItems: PortfolioItem[] = [
     link: "https://devsolutions-lvpryiwc2-padua-vinicius-projects.vercel.app/",
     techs: []
   },
+  {
+    id: 4,
+    title: "Ejababa",
+    imageUrl: "/imagens/ejaraba.jpeg",
+    result: "Site com experiência digital completa para empresas: apresentação de serviços, portfólio visual, agendamento online e geração de orçamento automatizada  .",
+    link: "www.ejarabaonline.com/",
+    techs: []
+  },
 ];
 
 export default function PortfolioSection() {
