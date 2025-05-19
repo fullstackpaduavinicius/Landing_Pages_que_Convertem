@@ -44,15 +44,15 @@ const portfolioItems: PortfolioItem[] = [
     title: "Ejababa",
     imageUrl: "/imagens/ejaraba.jpeg",
     result: "Site com experiência digital completa para empresas: apresentação de serviços, portfólio visual, agendamento online e geração de orçamento automatizada  .",
-    link: "www.ejarabaonline.com/",
+    link: "https://www.ejarabaonline.com/",
     techs: []
   },
   {
     id: 4,
     title: "Delivery",
-    imageUrl: "/imagens/ejaraba.jpeg",
+    imageUrl: "/imagens/delivery_lp.png",
     result: "Delivery simplificado. Cardapio oline + cadastro de pedido + redirecionamento para whatsapp.",
-    link: "delivery-app-ebon.vercel.app",
+    link: "https://delivery-app-ebon.vercel.app/",
     techs: []
   },
 ];
